@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  elasticsearch:
+    rest:
+      connection-timeout: 30
+      uris: localhost:9200
+  application:
+    name: Demo
