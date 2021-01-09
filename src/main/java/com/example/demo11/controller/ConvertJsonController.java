@@ -13,8 +13,8 @@ public class ConvertJsonController {
     ConvertJsonService convertJsonService;
 
     @GetMapping(path = "/convertJsonGet", produces = "application/json")
-    public ResponseEntity<String> convertJsonGet(@RequestParam("url") String url, String params) {
-        String rs = convertJsonService.convertJson(url, params);
+    public ResponseEntity<String> convertJsonGet(@RequestParam("url") String url) {
+        String rs = convertJsonService.convertJson(url, null);
         if (null == rs) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
@@ -22,7 +22,7 @@ public class ConvertJsonController {
     }
 
     @GetMapping(path = "/convertJsonPost", produces = "application/json")
-    public ResponseEntity<String> convertJsonPost(@RequestParam("url") String url, @RequestBody String params) {
+    public ResponseEntity<String> convertJsonPost(@RequestParam("url") String url, @RequestBody Object params) {
         String rs = convertJsonService.convertJson(url, params);
         if (null == rs) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
