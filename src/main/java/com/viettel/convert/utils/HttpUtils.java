@@ -1,4 +1,4 @@
-package com.example.demo11.utils;
+package com.viettel.convert.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,7 +19,7 @@ public class HttpUtils {
         HttpURLConnection connection = null;
         OutputStreamWriter writer = null;
         try {
-            URL url = new URL(urlRequest);
+            URL url = new URL("http://" + urlRequest);
             connection = (HttpURLConnection) url.openConnection();
             connection.setDoInput(true);
             if (null == params) {

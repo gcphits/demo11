@@ -1,13 +1,13 @@
-package com.example.demo11.controller;
+package com.viettel.convert.controller;
 
-import com.example.demo11.service.ConvertJsonService;
+import com.viettel.convert.service.ConvertJsonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path = "/demo")
+@RequestMapping(path = "/convert")
 public class ConvertJsonController {
     @Autowired
     ConvertJsonService convertJsonService;

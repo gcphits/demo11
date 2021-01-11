@@ -1,10 +1,10 @@
-package com.example.demo11;
+package com.viettel.convert;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Demo11ApplicationTests {
+class ConvertApplicationTests {
 
     @Test
     void contextLoads() {
