@@ -8,11 +8,11 @@
         <version>2.2.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>demo11</artifactId>
+    <groupId>com.viettel</groupId>
+    <artifactId>api-convert-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo11</name>
-    <description>Demo project for Spring Boot</description>
+    <name>convert</name>
+    <description>Convert api</description>
 
     <properties>
         <java.version>11</java.version>
@@ -57,6 +57,19 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-loadbalancer</artifactId>
             <version>2.2.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.vladimir-bukhtoyarov</groupId>
+            <artifactId>bucket4j-hazelcast-4</artifactId>
+            <version>4.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast-spring</artifactId>
         </dependency>
     </dependencies>
 

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class StringUtils {
-    public static List<String> getWhitelist(String whitelist) {
+    public static List<String> getWhitelistHost(String whitelist) {
         List<String> result = new ArrayList<>();
         if (hasValue(whitelist)) {
             String[] listStr = whitelist.split(";");
