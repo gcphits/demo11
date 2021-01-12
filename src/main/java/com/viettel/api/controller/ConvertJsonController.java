@@ -1,6 +1,6 @@
-package com.viettel.convert.controller;
+package com.viettel.api.controller;
 
-import com.viettel.convert.service.ConvertJsonService;
+import com.viettel.api.service.ConvertJsonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ public class ConvertJsonController {
         return new ResponseEntity<>(rs, HttpStatus.OK);
     }
 
-    @GetMapping(path = "/convertJsonPost", produces = "application/json")
+    @PostMapping(path = "/convertJsonPost", produces = "application/json")
     public ResponseEntity<String> convertJsonPost(@RequestParam("url") String url, @RequestBody Object params) {
         String rs = convertJsonService.convertJson(url, params);
         if (null == rs) {

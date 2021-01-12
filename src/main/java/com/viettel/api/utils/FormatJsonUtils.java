@@ -1,4 +1,4 @@
-package com.viettel.convert.utils;
+package com.viettel.api.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;

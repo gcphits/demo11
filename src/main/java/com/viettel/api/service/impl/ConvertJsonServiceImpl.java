@@ -1,8 +1,8 @@
-package com.viettel.convert.service.impl;
+package com.viettel.api.service.impl;
 
-import com.viettel.convert.service.ConvertJsonService;
-import com.viettel.convert.utils.FormatJsonUtils;
-import com.viettel.convert.utils.HttpUtils;
+import com.viettel.api.service.ConvertJsonService;
+import com.viettel.api.utils.FormatJsonUtils;
+import com.viettel.api.utils.HttpUtils;
 import org.springframework.stereotype.Service;
 
 @Service

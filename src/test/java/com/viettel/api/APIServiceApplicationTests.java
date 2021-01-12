@@ -1,10 +1,10 @@
-package com.viettel.convert;
+package com.viettel.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ConvertApplicationTests {
+class APIServiceApplicationTests {
 
     @Test
     void contextLoads() {
