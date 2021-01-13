@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8888
 spring:
   elasticsearch:
     rest:
@@ -11,6 +11,6 @@ spring:
 config-prop:
   limitTime: 6000
   requestPerTime: 120
-  tokensToConsume: 1
+  tokensToConsume: 5
   keyHits: hits
   keySource: _source
