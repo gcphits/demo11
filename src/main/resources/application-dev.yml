@@ -7,3 +7,10 @@ spring:
       uris: localhost:9200
   application:
     name: API Service
+
+config-prop:
+  limitTime: 6000
+  requestPerTime: 120
+  tokensToConsume: 1
+  keyHits: hits
+  keySource: _source
